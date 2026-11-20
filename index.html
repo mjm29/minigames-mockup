@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <main class="screen-content">
+        <!-- static ver of feat. games carousel-->
+        <section class="featured-section" aria-label="Featured Games">
+          <h1 class="page-heading">Featured Games</h1>
+          <a href="wordle.html" class="featured-banner-link">
+            <img
+              src="assets/wordle-banner.png"
+              alt="Wordle banner img"
+              class="featured-banner-img"
+            />
+          </a>
+          <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </section>
+
+        <!-- games list card view only -->
+        <section class="games-section" aria-label="Games">
+          <div class="games-header">
+            <h2 class="section-heading">Games</h2>
+          </div>
+          <div class="games-list">
+            <a href="wordle.html" class="game-card wordle-card">
+              <span class="card-title">Wordle</span>
+              <span class="play-pill">PLAY NOW →</span>
+            </a>
+            <a href="betting.html" class="game-card betting-card">
+              <span class="card-title">Betting</span>
+              <span class="play-pill">PLAY NOW →</span>
+            </a>
+          </div>
+        </section>
+      </main>
+      <!-- navbar for home, prof, and settings pages -->
+      <nav class="bottom-tabs" aria-label="Bottom navigation">
+        <a href="index.html" class="tab-item is-active">
+          <span class="tab-icon">🏠</span>
+          <span class="tab-label">Home</span>
+        </a>
+        <div class="tab-item is-disabled">
+          <span class="tab-icon">👤</span>
+          <span class="tab-label">Profile</span>
+        </div>
+        <div class="tab-item is-disabled">
+          <span class="tab-icon">⚙️</span>
+          <span class="tab-label">Settings</span>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>
