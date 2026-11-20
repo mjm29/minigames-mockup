@@ -113,14 +113,14 @@ body {
 
 .wordle-card {
   background-position: center;
-  background-image: url("/assets/wordle-card.png");
+  background-image: url("./assets/wordle-card.png");
   background-size: cover;
 }
 
 .betting-card {
   background-size: cover;
   background-position: center;
-  background-image: url("/assets/betting-banner.jpg");
+  background-image: url("./assets/betting-banner.jpg");
 }
 
 .card-title {
