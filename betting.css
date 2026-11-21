@@ -1,0 +1,263 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  color: white;
+  background-color: white;
+  min-height: 100vh;
+  justify-content: center;
+  display: flex;
+}
+
+.phone-frame {
+  max-width: 376px;
+  width: 100%;
+  padding: 18px 16px 28px;
+  background-color: darkolivegreen;
+  min-height: 100vh;
+}
+
+.back-btn {
+  color: lightgreen;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.title-row {
+  align-items: center;
+  display: flex;
+  margin-bottom: 16px;
+  justify-content: space-between;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 28px;
+}
+
+.subtitle {
+  margin-top: 2px;
+  font-size: 13px;
+  color: darkseagreen;
+}
+
+.mode-radio {
+  display: none;
+}
+
+.mode-switch {
+  border-radius: 999px;
+  display: flex;
+  margin-bottom: 18px;
+  background-color: darkgreen;
+  padding: 4px;
+}
+
+.mode-tab {
+  border-radius: 999px;
+  color: darkseagreen;
+  flex: 1;
+  cursor: pointer;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.pick-number-view {
+  display: none;
+}
+
+#mode-odd-even:checked ~ .mode-switch .tab-odd-even,
+#mode-pick-number:checked ~ .mode-switch .tab-pick-number {
+  color: black;
+  background-color: gold;
+}
+/*if pick-number section is clicked, hide components tagged for odd-even game*/
+#mode-pick-number:checked ~ .odd-even-view {
+  display: none;
+}
+
+#mode-pick-number:checked ~ .pick-number-view {
+  display: block;
+}
+
+.dice-panel {
+  border-radius: 18px;
+  border: 1px solid olive;
+  margin-bottom: 16px;
+  background-color: seagreen;
+  padding: 24px 18px 18px;
+}
+
+.dice-row {
+  margin-bottom: 22px;
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+}
+
+.die {
+  border-radius: 14px;
+  height: 84px;
+  background-color: white;
+  width: 84px;
+  padding: 10px;
+  border: 3px solid gold;
+}
+
+.die-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.die-two {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+}
+
+.pip {
+  border-radius: 50%;
+  height: 14px;
+  background-color: darkgreen;
+  width: 14px;
+}
+
+.result-row {
+  gap: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.result-badge {
+  border-radius: 999px;
+  color: black;
+  font-size: 13px;
+  background-color: gold;
+  font-weight: 800;
+  padding: 6px 14px;
+}
+
+.result-text {
+  font-size: 14px;
+  color: lightgreen;
+}
+
+.choice-buttons {
+  margin-bottom: 12px;
+  display: flex;
+  gap: 12px;
+}
+
+.choice-btn {
+  border: none;
+  font-size: 18px;
+  color: black;
+  flex: 1;
+  border-radius: 14px;
+  background-color: gold;
+  padding: 16px;
+  font-weight: 800;
+}
+
+.helper-note {
+  margin-bottom: 24px;
+  font-size: 12px;
+  color: darkseagreen;
+  text-align: center;
+}
+
+.history-label {
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: darkseagreen;
+  font-size: 11px;
+}
+
+.history-pills {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 8px;
+}
+
+.roll-pill {
+  border-radius: 999px;
+  font-size: 11px;
+  border: 1px solid olive;
+  color: lightgreen;
+  background-color: seagreen;
+  font-weight: 700;
+  padding: 6px 12px;
+}
+
+.roll-pill.is-latest {
+  color: gold;
+  border-color: gold;
+}
+
+/* pick a number sectino */
+.number-panel {
+  border: 1px solid olive;
+  text-align: center;
+  border-radius: 18px;
+  background-color: seagreen;
+  padding: 24px 14px 22px;
+}
+
+.number-heading {
+  letter-spacing: 0.12em;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: darkseagreen;
+  font-size: 12px;
+}
+
+.number-grid {
+  justify-items: center;
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 22px;
+  display: grid;
+  gap: 10px;
+}
+
+.num-circle {
+  align-items: center;
+  border-radius: 50%;
+  color: gold;
+  height: 52px;
+  cursor: pointer;
+  background-color: transparent;
+  width: 52px;
+  font-size: 18px;
+  justify-content: center;
+  display: flex;
+  border: 2px solid gold;
+  font-weight: 700;
+}
+
+.num-circle:hover,
+.num-circle:focus-visible {
+  outline: none;
+  color: black;
+  background-color: gold;
+}
+
+.number-caption {
+  font-size: 14px;
+  color: darkseagreen;
+}

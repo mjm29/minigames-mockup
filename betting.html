@@ -3,10 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Betting Game</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Lucky Games</title>
+    <link rel="stylesheet" href="betting.css" />
   </head>
   <body>
-    <a href="index.html">← Home</a>
+    <div class="phone-frame">
+      <header class="top-bar">
+        <a href="index.html" class="back-btn">← Back</a>
+        <div class="title-row">
+          <div>
+            <h1>Lucky Games</h1>
+            <p class="subtitle">Roll the dice or pick your lucky number</p>
+          </div>
+        </div>
+      </header>
+
+      <div class="mode-wrapper">
+        <input
+          type="radio"
+          name="slider"
+          id="mode-odd-even"
+          class="mode-radio"
+          checked
+        />
+        <input
+          type="radio"
+          name="slider"
+          id="mode-pick-number"
+          class="mode-radio"
+        />
+
+        <div class="mode-switch">
+          <label for="mode-odd-even" class="mode-tab tab-odd-even"
+            >Odd / Even</label
+          >
+          <label for="mode-pick-number" class="mode-tab tab-pick-number"
+            >Pick a Number</label
+          >
+        </div>
+
+        <div class="odd-even-view">
+          <section class="dice-panel">
+            <div class="dice-row">
+              <div class="die die-one" aria-label="Die showing 1">
+                <span class="pip"></span>
+              </div>
+              <div class="die die-two" aria-label="Die showing 2">
+                <span class="pip"></span>
+                <span class="pip"></span>
+              </div>
+            </div>
+
+            <div class="result-row">
+              <span class="result-badge">ODD</span>
+              <span class="result-text">You win.</span>
+            </div>
+          </section>
+
+          <div class="choice-buttons">
+            <button type="button" class="choice-btn">ODD</button>
+            <button type="button" class="choice-btn">EVEN</button>
+          </div>
+
+          <p class="helper-note">Both dice together decide odd or even</p>
+
+          <section class="history-section">
+            <div class="history-label">LAST ROLLS</div>
+            <div class="history-pills">
+              <span class="roll-pill is-latest">ODD</span>
+              <span class="roll-pill">ODD</span>
+              <span class="roll-pill">EVEN</span>
+              <span class="roll-pill">ODD</span>
+              <span class="roll-pill">ODD</span>
+            </div>
+          </section>
+        </div>
+
+        <div class="pick-number-view">
+          <section class="number-panel">
+            <div class="number-heading">CHOOSE YOUR NUMBER</div>
+
+            <div class="number-grid">
+              <button type="button" class="num-circle">1</button>
+              <button type="button" class="num-circle">2</button>
+              <button type="button" class="num-circle">3</button>
+              <button type="button" class="num-circle">4</button>
+              <button type="button" class="num-circle">5</button>
+              <button type="button" class="num-circle">6</button>
+              <button type="button" class="num-circle">7</button>
+              <button type="button" class="num-circle">8</button>
+              <button type="button" class="num-circle">9</button>
+              <button type="button" class="num-circle">10</button>
+            </div>
+
+            <p class="number-caption">Pick a number from 1 to 10.</p>
+          </section>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
