@@ -1,0 +1,30 @@
+.wordle-home {
+  background-color: darkslategray;
+}
+
+.flex-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 75px;
+  height: 100vh;
+}
+
+.menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 100px;
+  border: 2px solid #767676;
+  border-radius: 20px;
+  background-color: beige;
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.menu-btn:hover {
+  background-color: darksalmon;
+}
