@@ -4,9 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wordle</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="wordle.css" />
   </head>
   <body>
-    <a href="wordlehome.html">← Quit</a>
+    <div class="game-container">
+      <!-- Top Header -->
+      <header class="header">
+        <div class="header-spacer"></div>
+
+        <h1 class="title">WORDLE</h1>
+
+        <div class="header-right">
+          <button class="icon-btn" aria-label="Settings">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="4" y1="7" x2="20" y2="7"/>
+              <line x1="4" y1="12" x2="20" y2="12"/>
+              <line x1="4" y1="17" x2="20" y2="17"/>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- 6x5 Word Grid -->
+      <main class="board-wrapper">
+        <div class="board" aria-label="Game Board">
+          <div class="row">
+            <div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div>
+          </div>
+          <div class="row">
+            <div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div>
+          </div>
+          <div class="row">
+            <div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div>
+          </div>
+          <div class="row">
+            <div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div>
+          </div>
+          <div class="row">
+            <div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div>
+          </div>
+          <div class="row">
+            <div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div>
+          </div>
+        </div>
+      </main>
+
+      <!-- On-Screen Keyboard -->
+      <section class="keyboard" aria-label="Keyboard">
+        <div class="kb-row">
+          <button class="key">Q</button>
+          <button class="key">W</button>
+          <button class="key">E</button>
+          <button class="key">R</button>
+          <button class="key">T</button>
+          <button class="key">Y</button>
+          <button class="key">U</button>
+          <button class="key">I</button>
+          <button class="key">O</button>
+          <button class="key">P</button>
+        </div>
+
+        <div class="kb-row kb-row-mid">
+          <button class="key">A</button>
+          <button class="key">S</button>
+          <button class="key">D</button>
+          <button class="key">F</button>
+          <button class="key">G</button>
+          <button class="key">H</button>
+          <button class="key">J</button>
+          <button class="key">K</button>
+          <button class="key">L</button>
+        </div>
+
+        <div class="kb-row">
+          <button class="key key-wide key-enter">ENTER</button>
+          <button class="key">Z</button>
+          <button class="key">X</button>
+          <button class="key">C</button>
+          <button class="key">V</button>
+          <button class="key">B</button>
+          <button class="key">N</button>
+          <button class="key">M</button>
+          <button class="key key-wide" aria-label="Backspace">DEL</button>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
